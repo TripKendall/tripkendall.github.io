@@ -18,25 +18,23 @@ body {background: #232526; background-color: #232526;}
   font-weight: 300;
   line-height: 1;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
-.reveal h1 {font-size: 3.58em; }
-.reveal h2 {font-size: 2.35em; }
+.reveal h1 {font-size: 3.58em;   text-transform: uppercase;}
+.reveal h2 {font-size: 3.12em;   text-transform: uppercase;}
+.reveal h2.questions{font-size: 2.3em; text-align: center; text-transform: uppercase; padding: .23em .35em;}
 
-.reset-left h2{font-size: 1.853em; padding:.235em}
-
-.reveal h3 {font-size: 1.35em; color:#D99177!important; }
+.reveal h3 {font-size: 1.35em; color:#D99177!important; font-weight: 700;}
 .reveal h4 {font-size: 1em; }
 
-.reveal h5.content-heading{padding:.3em 0 0 .5em; font-weight: 400;}  
+.reveal h5.content-heading{padding:.123em 0 0 1.25em; font-weight: 400; margin-bottom:0;}  
 .reveal h5.content-heading::first-letter {font-size: 123%; font-weight: 700; color: #3D5E73; opacity: 50%;}
 
 .reveal h1 {text-shadow: none; }
 
-.reveal p {margin: .23em 0; line-height: 1.1;}
-.reveal p.content {line-height: .9; font-size: .8em; color:#f2f2f2; padding:.5em 2em .5em 1em; }
+.reveal p {margin: .23em 0; line-height: 1.1; font-size:1.235em}
+.reveal p.content {color:#f2f2f2; padding:.5em 2em .5em 1em; }
 
 .reveal .pale{color:#D9B166!important;}
 .reveal .pink{color:#D99177!important;}
@@ -44,8 +42,8 @@ body {background: #232526; background-color: #232526;}
 .reveal .off-white{color:#f2f2f2!important;}
 
 #dice{float: left; border:none; background: none; box-shadow: none; margin:0 .3em 0 .5em;}
+.credits{margin:0 .35em 0 .35em;}
 
-.small-left{font-size: .35em;}
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {max-width: 95%; max-height: 95%;}
@@ -54,8 +52,8 @@ body {background: #232526; background-color: #232526;}
 .reveal em {font-style: italic;}
 .reveal ol, .reveal dl, .reveal ul {display: inline-block; text-align: left; margin: 0 0 0 1em; }
 .reveal ol {list-style-type: decimal;}
-.reveal ul {list-style-type: none;  padding:.35em 0; margin:0 0 .3em .35em;}
-.reveal ul li {padding:.135em; color:#f2f2f2; font-size: .8em; border: 3px solid #232526; padding:.3em;}
+.reveal ul {list-style-type: none;  padding:.12em 0 .12em .58em; margin:0 0 .3em .58em;}
+.reveal ul li {padding:.135em; color:#f2f2f2; font-size: 1.23em; border: 3px solid #232526; padding:.13em 0 .13em .58em;}
 
 .reveal ul li:hover {border-radius: 3px; border: 3px solid rgb(13, 13, 13, .23); box-shadow: 0 0 10px rgb(13, 13, 13, .35);}
 
@@ -152,8 +150,8 @@ form .row {
   position: relative;  
   overflow: hidden; 
   vertical-align: middle;
-  padding: .3em;
-  font-size: .8em;
+  padding: .23em;
+  font-size: 1.23em;
   border-radius: 3px;
   border: 3px solid rgb(13, 13, 13, .1);
   box-shadow: 0 0 10px rgb(13, 13, 13, .3); 
@@ -162,7 +160,12 @@ form .row {
 
 form .row:hover {background-color: rgb(0, 43, 54, .23); color:#fff; border-bottom:2px solid rgb(242, 242, 242, .2);}
 
-.question{float:right; vertical-align: middle; margin-left:.5em; padding:3px 0 00; text-align:left!important; line-height: 1em;}
+.question{float:right; 
+          vertical-align: middle; 
+          margin-left:.5em; 
+          padding:3px 0 00; 
+          text-align:left!important; 
+          line-height: 1em;}
 
 .answers{float:left; vertical-align: middle; margin-right:.5em; line-height: 1em;}
 
@@ -333,7 +336,7 @@ form button {
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   text-align: center;
